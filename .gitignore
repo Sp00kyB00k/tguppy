@@ -1,0 +1,6 @@
+# Developer gunk
+__pycache__/
+
+
+# secrets
+*.pcap
