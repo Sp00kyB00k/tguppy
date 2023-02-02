@@ -2,9 +2,9 @@ import os
 import socket
 
 CONFIG = {
-    'ETHII': (socket.AF_PACKET, socket.IPPROTO_RAW),
+    'ETHII': (socket.AF_PACKET, 768),
     'ICMP': (socket.AF_INET, socket.IPPROTO_ICMP),
-    'IP': (socket.AF_INET, socket.IPPROTO_IPV4)
+    'IP': (socket.AF_INET, socket.IPPROTO_IP)
 }
 
 
@@ -42,7 +42,7 @@ class Sniffer:
     Using raw socket to listen to all interfaces and all protocols
     """
 
-    def __init__(self, mode='IP'):
+    def __init__(self, mode='ETHII'):
         _conf = CONFIG[mode]
         self.socket_family = _conf[0]
         self.socket_type = socket.SOCK_RAW
@@ -54,7 +54,6 @@ class Sniffer:
         count = 0
         while True:
             buff = conn.recv(4096)
-            print(buff)
             HexFormatter(buff).hexdump(show=True)
             if amount:
                 if count >= amount:
