@@ -1,4 +1,5 @@
 # tguppy
+
 ## Terminal tool for grabbing packets and analysing them on the fly
 
 tguppy is a simple command line interface tool meant for analyzing packet from a certain layer and up
@@ -6,10 +7,12 @@ tguppy is a simple command line interface tool meant for analyzing packet from a
 ## Options
 
 It has the Options to start at the:
+
 - Ethernet layer
 - IP Layer
 
-## To Do List 
+## To Do List
+
 [ ] Working Sniffer
 [ ] Working PCAP reader
 [ ] Working Protocol Suite
