@@ -13,11 +13,11 @@ It has the Options to start at the:
 
 ## To Do List
 
-[ ] Working Sniffer
-[ ] Working PCAP reader
-[ ] Working Protocol Suite
-[ ] Deencapsulation into one PDU
-[ ] Analysing Packets in HexDump
-[ ] Analysing Packet on protocol headers and such
-[ ] Packet Crafting
-[ ] Packet Sending
+- [ ] Working Sniffer
+- [ ] Working PCAP reader
+- [ ] Working Protocol Suite
+- [ ] Deencapsulation into one PDU
+- [ ] Analysing Packets in HexDump
+- [ ] Analysing Packet on protocol headers and such
+- [ ] Packet Crafting
+- [ ] Packet Sending
